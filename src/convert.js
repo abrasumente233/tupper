@@ -1,3 +1,10 @@
+/**
+ *  What a graph below is?
+ *  It's a 2D array (106 * 17) which stores boolean values. And it's in Quadrant IV.
+ *  You can refer the bottom left corner by using graph[0][16]
+ */
+
+
 import bigInt from 'big-integer';
 
 const totalCells = 106 * 17;
