@@ -1,0 +1,35 @@
+/* Base Application Styles */
+body {
+  color: #fff;
+  background: #222;
+}
+
+.k-view {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  min-height: 100px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1060px;
+  height: 170px;
+  border: 1px solid red;
+}
+
+.row {
+  height: 10px;
+}
+
+.cell {
+  border: 1px solid yellow;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.selected-cell {
+  composes: cell;
+  background: white;
+}

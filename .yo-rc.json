@@ -1,0 +1,8 @@
+{
+  "generator-react-webpack": {
+    "appName": "tupper",
+    "style": "css",
+    "postcss": true,
+    "generatedWithVersion": 3
+  }
+}
