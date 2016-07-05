@@ -2,21 +2,30 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { changeK, changeGraph } from '../actions/actions';
 import GraphView from '../components/GraphView';
-import KView from '../components/KView';
+import TextView from '../components/TextView';
+import style from '../styles/App.css';
 
 class App extends Component {
   render() {
     const { graph, k, dispatch } = this.props;
-    
+
     return (
       <div>
           <GraphView
+            width = {106}
+            height = {17}
+            canvasWidth = {1060}
+            canvasHeight = {170}
+            activeColor = {'#df4b26'}
+            inactiveColor = {'#ffffff'}
             updateGraph = { graph => dispatch(changeGraph(graph)) }
             graph = {graph}
           />
-          <KView
-            updateK = { k => dispatch(changeK(k)) }
-            k = {k}
+          <TextView
+            name = {'k'}
+            update = { value => dispatch(changeK(value)) }
+            value = {k}
+            style = { style['k-view'] }
           />
       </div>
     )

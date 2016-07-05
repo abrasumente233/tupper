@@ -21,10 +21,10 @@ export function K2Graph(k) {
   binaryForm = zeros.concat(binaryForm);
 
   let graph = [];
-  for (let i = 0; i < 17; i++) {
-    graph[i] = [];
-    for (let j = 0; j < 106; j++) {
-      graph[i][j] = +binaryForm.charAt((17 * j) + (16 - i));
+  for (let x = 0; x < 106; x++) {
+    graph[x] = [];
+    for (let y = 0; y < 17; y++) {
+      graph[x][y] = binaryForm.charAt((17 * x) + (16 - y)) === '1';
     }
   }
 
@@ -37,9 +37,9 @@ export function K2Graph(k) {
 export function Graph2K(graph) {
   let binaryArray = [];
 
-  for (let i = 0; i < 17; i++) {
-    for (let j = 0; j < 106; j++) {
-      binaryArray[(17 * j) + (16 - i)] = graph[i][j]
+  for (let x = 0; x < 106; x++) {
+    for (let y = 0; y < 17; y++) {
+      binaryArray[(17 * x) + (16 - y)] = graph[x][y] ? 1 : 0;
     }
   }
 
