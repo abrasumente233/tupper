@@ -16,7 +16,10 @@
     "test": "karma start",
     "test:watch": "karma start --autoWatch=true --singleRun=false"
   },
-  "repository": "https://github.com/abrasumente233/tupper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abrasumente233/tupper"
+  },
   "license": "MIT",
   "keywords": [
     "tupper"
